@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .div{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 50px;
+        animation-name: moveAround;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+       }
+
+       .div:hover{
+        animation-play-state: paused;
+       }
+
+       @keyframes moveAround {
+            0%{
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+            25%{
+                top: 225px;
+                left: 0;
+                background-color: blue;
+            }
+            50%{
+                top: 225px;
+                left: 225px;
+                background-color: green;
+            }
+            75%{
+                top: 0;
+                left: 225px;
+                background-color: yellow;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+
+       }
+    </style>
+</head>
+<body>
+        <div class="div"></div>
+</body>
+</html>
